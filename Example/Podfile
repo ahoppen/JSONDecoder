@@ -1,0 +1,9 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+
+target 'JSONDecoder_Tests', :exclusive => true do
+  pod "JSONDecoder", :path => "../"
+
+  
+end
