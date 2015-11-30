@@ -1,0 +1,14 @@
+PODS:
+  - JSONDecoder (0.1.0)
+
+DEPENDENCIES:
+  - JSONDecoder (from `../`)
+
+EXTERNAL SOURCES:
+  JSONDecoder:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JSONDecoder: 3ddbc5eef561a3421a0c68b7f3eaeafcacc6486f
+
+COCOAPODS: 0.39.0

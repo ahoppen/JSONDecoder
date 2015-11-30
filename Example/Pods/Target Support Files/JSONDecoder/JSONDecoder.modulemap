@@ -1,0 +1,6 @@
+framework module JSONDecoder {
+  umbrella header "JSONDecoder-umbrella.h"
+
+  export *
+  module * { export * }
+}

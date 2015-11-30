@@ -7,20 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		6EA3F9AE95F5F34E6427910D /* Pods_JSONDecoder_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1C248AE63310F90AF919EC /* Pods_JSONDecoder_Tests.framework */; };
+		FA35AA941C05BD6D000C8974 /* JSONDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA35AA931C05BD6D000C8974 /* JSONDecoderTests.swift */; };
+		FA35AA961C05BD76000C8974 /* BasicJSONDecodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA35AA951C05BD76000C8974 /* BasicJSONDecodableTests.swift */; };
+		FA35AA981C05EE78000C8974 /* CustomAtomicDataTypesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA35AA971C05EE78000C8974 /* CustomAtomicDataTypesTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		034B434E40350B3BD5A8558C /* JSONDecoder.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JSONDecoder.podspec; path = ../JSONDecoder.podspec; sourceTree = "<group>"; };
 		1F1C248AE63310F90AF919EC /* Pods_JSONDecoder_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JSONDecoder_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		307B2D6FF02E13EBFD397A36 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = JSONDecoder_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACE51AFB9204008FA782 /* JSONDecoder_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONDecoder_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6D23B93CEAA4BA2555E86207 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		73C81F6D66F848281331DD2E /* Pods-JSONDecoder_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONDecoder_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JSONDecoder_Tests/Pods-JSONDecoder_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CF1863188AF0F54A5D9B3F24 /* Pods-JSONDecoder_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONDecoder_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JSONDecoder_Tests/Pods-JSONDecoder_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA35AA931C05BD6D000C8974 /* JSONDecoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecoderTests.swift; sourceTree = "<group>"; };
+		FA35AA951C05BD76000C8974 /* BasicJSONDecodableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicJSONDecodableTests.swift; sourceTree = "<group>"; };
+		FA35AA971C05EE78000C8974 /* CustomAtomicDataTypesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAtomicDataTypesTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,7 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACE51AFB9204008FA782 /* Tests.xctest */,
+				607FACE51AFB9204008FA782 /* JSONDecoder_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,7 +70,9 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				FA35AA951C05BD76000C8974 /* BasicJSONDecodableTests.swift */,
+				FA35AA931C05BD6D000C8974 /* JSONDecoderTests.swift */,
+				FA35AA971C05EE78000C8974 /* CustomAtomicDataTypesTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -118,7 +124,7 @@
 			);
 			name = JSONDecoder_Tests;
 			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* Tests.xctest */;
+			productReference = 607FACE51AFB9204008FA782 /* JSONDecoder_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -127,7 +133,8 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACE41AFB9204008FA782 = {
@@ -217,7 +224,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				FA35AA981C05EE78000C8974 /* CustomAtomicDataTypesTests.swift in Sources */,
+				FA35AA941C05BD6D000C8974 /* JSONDecoderTests.swift in Sources */,
+				FA35AA961C05BD76000C8974 /* BasicJSONDecodableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +254,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -319,6 +329,7 @@
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JSONDecoder_Example.app/JSONDecoder_Example";
 			};
@@ -334,6 +345,7 @@
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JSONDecoder_Example.app/JSONDecoder_Example";
 			};
